@@ -12,3 +12,7 @@
 # VS
 .vs/
 .vscode/
+
+# cache and build folder
+.cache/
+build/
