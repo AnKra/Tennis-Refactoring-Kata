@@ -40,43 +40,31 @@ std::string tennis_score(int player1Score, int player2Score)
             endGameScore = "Win for " + player2Name;
         }
         result = endGameScore;
-    } else {
+    }
+    else
+    {
         // regular score
         std::string regularScore;
         std::string score1;
-        switch (player1Score) {
-            case 0:
-                score1 = "Love";
-            break;
-            case 1:
-                score1 = "Fifteen";
-            break;
-            case 2:
-                score1 = "Thirty";
-            break;
-            default:
-                score1 = "Forty";
-            break;
+        switch (player1Score)
+        {
+            case 0: score1 = "Love"; break;
+            case 1: score1 = "Fifteen"; break;
+            case 2: score1 = "Thirty"; break;
+            default: score1 = "Forty"; break;
         }
 
         std::string score2;
-        switch (player2Score) {
-            case 0:
-                score2 = "Love";
-            break;
-            case 1:
-                score2 = "Fifteen";
-            break;
-            case 2:
-                score2 = "Thirty";
-            break;
-            default:
-                score2 = "Forty";
-            break;
+        switch (player2Score)
+        {
+            case 0: score2 = "Love"; break;
+            case 1: score2 = "Fifteen"; break;
+            case 2: score2 = "Thirty"; break;
+            default: score2 = "Forty"; break;
         }
 
         regularScore = score1 + "-" + score2;
-        result = regularScore;
+        result       = regularScore;
     }
 
     return result;
